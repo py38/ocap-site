@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ô Cap — Restaurant Café · Abidjan</title>
+<meta name="description" content="Ô Cap · Food with attitude. Restaurant café haut de gamme à Abidjan, galerie Cap Sud. Brunch, salades, burgers, poissons crus. Ouvert tous les jours de 8h à 21h." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" type="image/jpeg" href="assets/img/logo.jpg" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#hero" class="nav__brand" aria-label="Ô Cap — accueil">
+    <img src="assets/img/logo.jpg" alt="Ô Cap" />
+  </a>
+  <nav class="nav__links">
+    <a href="#story">Maison</a>
+    <a href="#menu">Menu</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#galerie">Galerie</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Réserver</a>
+  <button class="nav__burger" aria-label="Menu" id="burger"><span></span><span></span></button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <video autoplay muted loop playsinline poster="assets/img/poster-hero.jpg">
+      <source src="assets/video/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__scrim"></div>
+  </div>
+  <div class="hero__inner">
+    <p class="hero__eyebrow reveal">Restaurant · Café — Abidjan</p>
+    <h1 class="hero__logo reveal">Ô Cap</h1>
+    <p class="hero__tagline reveal">Food with attitude</p>
+    <div class="hero__actions reveal">
+      <a href="#menu" class="btn btn--light">Voir le menu</a>
+      <a href="#contact" class="btn btn--ghost">Nous trouver</a>
+    </div>
+  </div>
+  <a href="#story" class="hero__scroll" aria-label="Défiler">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== HOURS STRIP ===== -->
+<section class="strip">
+  <div class="strip__track">
+    <span>Brunch</span><i>·</i><span>Salades</span><i>·</i><span>Burgers de papa</span><i>·</i><span>Le Cru</span><i>·</i><span>Desserts</span><i>·</i>
+    <span>Brunch</span><i>·</i><span>Salades</span><i>·</i><span>Burgers de papa</span><i>·</i><span>Le Cru</span><i>·</i><span>Desserts</span><i>·</i>
+  </div>
+</section>
+
+<!-- ===== STORY ===== -->
+<section class="story" id="story">
+  <div class="story__grid">
+    <div class="story__text reveal">
+      <p class="kicker">La maison</p>
+      <h2>Un café pas comme les autres.</h2>
+      <p class="lead">Ô Cap, c'est l'adresse gourmande de la galerie Cap Sud. Un café chic et décontracté où l'on vient partager un moment, à toute heure de la journée.</p>
+      <p>Du petit-déjeuner tardif au dîner qui s'éternise entre amis, notre équipe compose chaque assiette avec des produits frais du jour. Chic, mais jamais guindé&nbsp;— du pur bonheur dans l'assiette.</p>
+      <div class="story__hours">
+        <div>
+          <span class="h-num">8h → 21h</span>
+          <span class="h-lab">Tous les jours</span>
+        </div>
+        <div>
+          <span class="h-num">Cap Sud</span>
+          <span class="h-lab">Galerie · Abidjan</span>
+        </div>
+      </div>
+    </div>
+    <div class="story__media reveal">
+      <img src="assets/img/poke-bowl.jpg" alt="Poke bowl frais du jour" />
+      <div class="story__badge">Frais<br>du jour</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PARALLAX QUOTE ===== -->
+<section class="banner banner--burger">
+  <div class="banner__scrim"></div>
+  <div class="banner__inner reveal">
+    <p class="kicker light">Avec ou sans réservation</p>
+    <h2>De beaux moments et de belles saveurs, chaque jour de la semaine.</h2>
+    <a href="#contact" class="btn btn--light">Réserver une table</a>
+  </div>
+</section>
+
+<!-- ===== MENU ===== -->
+<section class="menu" id="menu">
+  <div class="menu__head reveal">
+    <p class="kicker">La carte</p>
+    <h2>Menu food</h2>
+    <p class="lead">Prix en francs CFA. Une carte qui voyage — des pâtes maison au poisson cru signé « Le&nbsp;Pêcheur ».</p>
+  </div>
+
+  <div class="menu__tabs reveal" id="menuTabs">
+    <button class="menu__tab is-active" data-cat="pates">Les Pâtes</button>
+    <button class="menu__tab" data-cat="salades">Salades</button>
+    <button class="menu__tab" data-cat="cru">Le Cru</button>
+    <button class="menu__tab" data-cat="sandwichs">Sandwichs</button>
+    <button class="menu__tab" data-cat="burgers">Burgers de papa</button>
+    <button class="menu__tab" data-cat="entrees">Entrées</button>
+  </div>
+
+  <div class="menu__panels">
+
+    <div class="menu__panel is-active" data-cat="pates">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Pâte Fruits de Mer</h3><p>Mérou, gamba, supions, sauce tomate, bisque</p></div><span class="dish__p">13 500</span></li>
+        <li><div class="dish__l"><h3>Pâte Alfredo</h3><p>Blanc de poulet, crème fraîche, champignon, basilic, parmesan</p></div><span class="dish__p">11 500</span></li>
+        <li><div class="dish__l"><h3>Pâte Pesto Poulet</h3><p>Blanc de poulet, pesto, basilic frais</p></div><span class="dish__p">11 000</span></li>
+        <li><div class="dish__l"><h3>Pâte Bolognaise</h3><p>Viande hachée, sauce tomate maison, parmesan</p></div><span class="dish__p">8 500</span></li>
+        <li><div class="dish__l"><h3>Pâte Arrabbiata</h3><p>Sauce tomate maison au basilic pimentée</p></div><span class="dish__p">7 500</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" data-cat="salades">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Salade Ô Cap <em>by Le Pêcheur</em></h3><p>Thon confit, supion, olive, mesclun, tomate cerise</p></div><span class="dish__p">12 500</span></li>
+        <li><div class="dish__l"><h3>Salade Caesar</h3><p>Poulet frit, salade sucrine, croûton, parmigiano</p></div><span class="dish__p">12 000</span></li>
+        <li><div class="dish__l"><h3>Salade Niçoise</h3><p>Thon, œuf, sucrine, pomme de terre, haricot vert, olives noires</p></div><span class="dish__p">10 500</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" data-cat="cru">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Ceviche <em>by Le Pêcheur</em></h3><p>Poisson cru mariné aux agrumes et épices</p></div><span class="dish__p">12 000</span></li>
+        <li><div class="dish__l"><h3>Tataki de Thon</h3><p>Poêlée de légumes</p></div><span class="dish__p">10 000</span></li>
+        <li><div class="dish__l"><h3>Carpaccio Mixte</h3><p>Assortiment de poissons crus à l'huile d'olive</p></div><span class="dish__p">9 000</span></li>
+        <li><div class="dish__l"><h3>Carpaccio de Mérou</h3><p>Fines tranches de mérou cru à l'huile d'olive</p></div><span class="dish__p">8 000</span></li>
+        <li><div class="dish__l"><h3>Carpaccio de Thon</h3><p>Fines tranches de thon cru à l'huile d'olive</p></div><span class="dish__p">6 500</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" data-cat="sandwichs">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Lobster Sandwich <em>by Le Pêcheur</em></h3><p>Gambas, pain brioché, sauce du pêcheur, chips maison</p></div><span class="dish__p">10 000</span></li>
+        <li><div class="dish__l"><h3>Philly Steak</h3><p>Bœuf mariné, légumes sautés, mozzarella, sauce barbecue</p></div><span class="dish__p">10 000</span></li>
+        <li><div class="dish__l"><h3>Chicken Quesadillas</h3><p>Poulet mariné, légumes, emmental, fromage frais, guacamole, pico de gallo</p></div><span class="dish__p">9 500</span></li>
+        <li><div class="dish__l"><h3>Club Poulet</h3><p>Poulet, sucrine, sauce mayonnaise, câpre, cornichon</p></div><span class="dish__p">8 500</span></li>
+        <li><div class="dish__l"><h3>Croque Monsieur</h3><p>Jambon de dinde fumée, emmental, béchamel</p></div><span class="dish__p">8 000</span></li>
+        <li><div class="dish__l"><h3>Hot Dog</h3><p>Saucisse de bœuf, chips maison, moutarde, ketchup, cheddar</p></div><span class="dish__p">6 500</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" data-cat="burgers">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Fish Burger <em>by Le Pêcheur</em></h3><p>Crispy de mérou, roquette, tomate, cornichon, mayonnaise au curry</p></div><span class="dish__p">12 000</span></li>
+        <li><div class="dish__l"><h3>O'cap Burger</h3><p>Steak haché, salade, tomates, oignons, jalapeño, cheddar, sauce aux herbes</p></div><span class="dish__p">9 500</span></li>
+        <li><div class="dish__l"><h3>Crispy Chicken</h3><p>Crispy de poulet, légumes sautés, cheddar, sauce Ô Cap</p></div><span class="dish__p">8 500</span></li>
+        <li><div class="dish__l"><h3>Lebanese Burger</h3><p>Steak haché 150g, tomates, cornichon, frites, coleslaw, cheddar</p></div><span class="dish__p">8 000</span></li>
+        <li><div class="dish__l"><h3>Cheese Burger</h3><p>Steak haché 150g, oignon caramélisé, salade, cheddar, cornichon</p></div><span class="dish__p">7 500</span></li>
+      </ul>
+    </div>
+
+    <div class="menu__panel" data-cat="entrees">
+      <ul class="dish">
+        <li><div class="dish__l"><h3>Assiette de la Mer <em>by Le Pêcheur</em></h3><p>À partager, pour 2 personnes</p></div><span class="dish__p">12 000</span></li>
+        <li><div class="dish__l"><h3>Dynamite Shrimp <em>by Le Pêcheur</em></h3><p>Crevettes épicées, sauce crémeuse</p></div><span class="dish__p">9 500</span></li>
+        <li><div class="dish__l"><h3>Bâtonnet de Mérou au Parmesan</h3><p>Bâtonnets de mérou panés au parmesan</p></div><span class="dish__p">8 000</span></li>
+        <li><div class="dish__l"><h3>Chicken Strip</h3><p>Lamelles de poulet panées et frites</p></div><span class="dish__p">6 000</span></li>
+        <li><div class="dish__l"><h3>Mozza Stick</h3><p>Bâtonnets de mozzarella panés et frits</p></div><span class="dish__p">6 000</span></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <p class="menu__note reveal">La carte évolue au fil des arrivages. Menu drinks, brunch &amp; desserts à découvrir sur place.</p>
+</section>
+
+<!-- ===== ÉQUIPE ===== -->
+<section class="equipe" id="equipe">
+  <div class="equipe__head reveal">
+    <p class="kicker">Les visages</p>
+    <h2>Ceux qui sont derrière chacune de vos assiettes.</h2>
+  </div>
+  <div class="equipe__grid">
+    <figure class="equipe__card equipe__card--wide reveal">
+      <video autoplay muted loop playsinline poster="assets/img/poster-equipe-cuisine.jpg">
+        <source src="assets/video/equipe-cuisine.mp4" type="video/mp4" />
+      </video>
+      <figcaption>Notre équipe cuisine</figcaption>
+    </figure>
+    <figure class="equipe__card reveal">
+      <video autoplay muted loop playsinline poster="assets/img/poster-garba.jpg">
+        <source src="assets/video/garba.mp4" type="video/mp4" />
+      </video>
+      <figcaption>En cuisine, chaque jour</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===== BANDES COLLAGE (défilement horizontal) ===== -->
+<section class="bands" id="galerie">
+  <div class="bands__rule"></div>
+
+  <div class="band" data-dir="left">
+    <div class="band__track" data-track>
+      <figure class="po"><img src="assets/img/food-wings.jpg" alt="Chicken wings Ô Cap" /></figure>
+      <figure class="po"><img src="assets/img/drink-cheers.jpg" alt="Cocktails maison" /></figure>
+      <figure class="po"><img src="assets/img/food-tataki.jpg" alt="Tataki de thon" /></figure>
+      <figure class="po"><img src="assets/img/food-club.jpg" alt="Club sandwich frites" /></figure>
+      <figure class="po"><img src="assets/img/drink-sip.jpg" alt="Dégustation cocktail" /></figure>
+      <figure class="po"><img src="assets/img/food-tartare.jpg" alt="Tartare de thon" /></figure>
+      <figure class="po"><img src="assets/img/food-dessert.jpg" alt="Dessert maison" /></figure>
+    </div>
+  </div>
+
+  <div class="band" data-dir="right">
+    <div class="band__track" data-track>
+      <figure class="po"><img src="assets/img/food-tartare.jpg" alt="Tartare de thon" /></figure>
+      <figure class="po"><img src="assets/img/drink-sip.jpg" alt="Dégustation cocktail" /></figure>
+      <figure class="po"><img src="assets/img/food-club.jpg" alt="Club sandwich frites" /></figure>
+      <figure class="po"><img src="assets/img/drink-cheers.jpg" alt="Cocktails maison" /></figure>
+      <figure class="po"><img src="assets/img/food-tataki.jpg" alt="Tataki de thon" /></figure>
+      <figure class="po"><img src="assets/img/food-dessert.jpg" alt="Dessert maison" /></figure>
+      <figure class="po"><img src="assets/img/food-wings.jpg" alt="Chicken wings Ô Cap" /></figure>
+    </div>
+  </div>
+
+  <div class="bands__rule"></div>
+</section>
+
+<!-- ===== SIGNATURE (vidéo plein cadre + logo) ===== -->
+<section class="signature" id="signature">
+  <div class="signature__media">
+    <video autoplay muted loop playsinline poster="assets/img/poster-signature.jpg">
+      <source src="assets/video/poke-saumon.mp4" type="video/mp4" />
+    </video>
+    <div class="signature__scrim"></div>
+  </div>
+  <div class="signature__inner reveal">
+    <p class="signature__eyebrow">La signature</p>
+    <h2>Du pur bonheur dans l'assiette.</h2>
+    <p class="signature__lead">Des produits frais du jour, une cuisine généreuse et une équipe qui met du cœur dans chaque plat. Voilà l'esprit Ô Cap.</p>
+    <a href="#menu" class="btn btn--light">Découvrir la carte</a>
+  </div>
+</section>
+
+<!-- ===== DELIVERY ===== -->
+<section class="deliv reveal">
+  <div class="deliv__inner">
+    <div>
+      <p class="kicker">À emporter</p>
+      <h2>Pas le temps&nbsp;? On vous livre.</h2>
+    </div>
+    <p class="deliv__txt">Retrouvez toute la carte Ô Cap en livraison sur <strong>Glovo</strong>. Vos plats préférés, où que vous soyez à Abidjan.</p>
+    <a href="#" class="btn btn--dark">Commander sur Glovo</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__info reveal">
+      <p class="kicker">Contact</p>
+      <h2>Passez nous voir.</h2>
+      <ul class="contact__list">
+        <li>
+          <span class="c-lab">Adresse</span>
+          <span class="c-val">Galerie Cap Sud<br>Abidjan, Côte d'Ivoire</span>
+        </li>
+        <li>
+          <span class="c-lab">Horaires</span>
+          <span class="c-val">Tous les jours<br>8h00 → 21h00</span>
+        </li>
+        <li>
+          <span class="c-lab">Téléphone</span>
+          <span class="c-val"><a href="tel:+2250701313131">07 01 31 31 31</a></span>
+        </li>
+        <li>
+          <span class="c-lab">Instagram</span>
+          <span class="c-val"><a href="https://instagram.com/ocap.abidjan" target="_blank" rel="noopener">@ocap.abidjan</a></span>
+        </li>
+      </ul>
+    </div>
+    <div class="contact__card reveal">
+      <h3>Réserver une table</h3>
+      <p>Pour un déjeuner rapide ou un dîner entre amis, appelez-nous directement — l'équipe s'occupe du reste.</p>
+      <a href="tel:+2250701313131" class="btn btn--dark btn--full">07 01 31 31 31</a>
+      <a href="https://instagram.com/ocap.abidjan" target="_blank" rel="noopener" class="btn btn--ghost-dark btn--full">Nous écrire sur Instagram</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__brand">Ô Cap</div>
+  <p class="footer__tag">Food with attitude · Abidjan</p>
+  <div class="footer__links">
+    <a href="#menu">Menu</a>
+    <a href="#equipe">Équipe</a>
+    <a href="#contact">Contact</a>
+    <a href="https://instagram.com/ocap.abidjan" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="footer__legal">© 2026 Ô Cap · Galerie Cap Sud, Abidjan · Ouvert tous les jours 8h–21h</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
