@@ -178,18 +178,6 @@
   </div>
 </section>
 
-<!-- ===== DELIVERY ===== -->
-<section class="deliv reveal">
-  <div class="deliv__inner">
-    <div>
-      <p class="kicker">À emporter</p>
-      <h2>Pas le temps&nbsp;? On vous livre.</h2>
-    </div>
-    <p class="deliv__txt">Retrouvez toute la carte Ô Cap en livraison sur <strong>Glovo</strong>. Vos plats préférés, où que vous soyez à Abidjan.</p>
-    <a href="#" class="btn btn--dark">Commander sur Glovo</a>
-  </div>
-</section>
-
 <!-- ===== CONTACT ===== -->
 <section class="contact" id="contact">
   <div class="contact__grid">
@@ -217,9 +205,31 @@
     </div>
     <div class="contact__card reveal">
       <h3>Réserver une table</h3>
-      <p>Pour un déjeuner rapide ou un dîner entre amis, appelez-nous directement — l'équipe s'occupe du reste.</p>
-      <a href="tel:+2250701313131" class="btn btn--dark btn--full">07 01 31 31 31</a>
-      <a href="https://instagram.com/ocap.abidjan" target="_blank" rel="noopener" class="btn btn--ghost-dark btn--full">Nous écrire sur Instagram</a>
+      <p>Indiquez vos infos, on confirme votre table sur WhatsApp.</p>
+      <label class="field"><span>Nom</span><input type="text" id="rName" placeholder="Votre nom" autocomplete="name"></label>
+      <label class="field"><span>Téléphone</span><input type="tel" id="rPhone" placeholder="Ex : 07 00 00 00 00" autocomplete="tel"></label>
+      <div class="field-row">
+        <label class="field"><span>Date</span><input type="date" id="rDate"></label>
+        <label class="field"><span>Heure</span><input type="time" id="rTime"></label>
+      </div>
+      <label class="field"><span>Personnes</span>
+        <select id="rGuests">
+          <option value="1">1 personne</option>
+          <option value="2" selected>2 personnes</option>
+          <option value="3">3 personnes</option>
+          <option value="4">4 personnes</option>
+          <option value="5">5 personnes</option>
+          <option value="6">6 personnes</option>
+          <option value="7">7 personnes</option>
+          <option value="8">8 personnes et +</option>
+        </select>
+      </label>
+      <label class="field"><span>Note <em>(optionnel)</em></span><input type="text" id="rNote" placeholder="Occasion, emplacement…"></label>
+      <button class="btn btn--wa btn--full" id="sendRes">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.4.5-.3.3c-.2.2-.3.4-.2.6.2.4.9 1.4 1.9 2.3 1.2 1.1 2.2 1.4 2.5 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.3.1.9-.1 1.5Z"/></svg>
+        Réserver sur WhatsApp
+      </button>
+      <a href="tel:+2250701313131" class="btn btn--ghost-dark btn--full">Ou appelez le 07 01 31 31 31</a>
     </div>
   </div>
 </section>

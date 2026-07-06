@@ -547,6 +547,7 @@ h2{
 }
 .field input:focus,.field select:focus{ outline:0; border-color:var(--gold); }
 .field--err input{ border-color:#d9534f; background:#fdf3f2; }
+.field-row{ display:grid; grid-template-columns:1fr 1fr; gap:.7rem; }
 .checkout__pay{ font-size:.82rem; color:var(--ink-soft); line-height:1.5; margin:.6rem 0 1.2rem; }
 
 /* ============================================================

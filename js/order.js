@@ -446,6 +446,52 @@
     window.open(url, "_blank");
   });
 
+  /* ---------- Réservation → WhatsApp ---------- */
+  var resBtn = document.getElementById("sendRes");
+  if (resBtn) {
+    resBtn.addEventListener("click", function () {
+      var name = document.getElementById("rName").value.trim();
+      var phone = document.getElementById("rPhone").value.trim();
+      var date = document.getElementById("rDate").value;
+      var time = document.getElementById("rTime").value;
+      var guests = document.getElementById("rGuests").value;
+      var note = document.getElementById("rNote").value.trim();
+
+      var missing = [];
+      if (!name) missing.push("rName");
+      if (!phone) missing.push("rPhone");
+      if (!date) missing.push("rDate");
+      if (!time) missing.push("rTime");
+      if (missing.length) {
+        missing.forEach(function (idf) {
+          var el = document.getElementById(idf);
+          el.classList.add("field--err");
+          el.addEventListener("input", function () { el.classList.remove("field--err"); }, { once: true });
+        });
+        document.getElementById(missing[0]).focus();
+        return;
+      }
+
+      // JJ/MM/AAAA
+      var dparts = date.split("-");
+      var dateFr = dparts.length === 3 ? dparts[2] + "/" + dparts[1] + "/" + dparts[0] : date;
+
+      var lines = [
+        "Bonjour Ô Cap 👋 Je souhaite réserver une table :",
+        "",
+        "Date : " + dateFr,
+        "Heure : " + time,
+        "Personnes : " + guests,
+        "Nom : " + name,
+        "Tél : " + phone,
+      ];
+      if (note) lines.push("Note : " + note);
+
+      var url = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n"));
+      window.open(url, "_blank");
+    });
+  }
+
   /* ---------- Init ---------- */
   paintControls();
   refreshCart();
