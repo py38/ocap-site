@@ -390,11 +390,18 @@
 
   function pulseFab() { fab.classList.remove("pulse"); void fab.offsetWidth; fab.classList.add("pulse"); }
 
-  /* ---------- Mode : afficher/masquer l'adresse ---------- */
+  /* ---------- Mode : adresse + info paiement ---------- */
   var modeSel = document.getElementById("fMode");
   var addrField = document.getElementById("addrField");
-  function syncAddr() { addrField.style.display = modeSel.value === "Livraison" ? "" : "none"; }
-  modeSel.addEventListener("change", syncAddr); syncAddr();
+  var payEl = document.querySelector(".checkout__pay");
+  function syncMode() {
+    var liv = modeSel.value === "Livraison";
+    addrField.style.display = liv ? "" : "none";
+    payEl.innerHTML = liv
+      ? "Livraison réglée par <strong>Wave</strong> ou <strong>Orange&nbsp;Money</strong> : après l'envoi, l'équipe vous confirme la commande et vous communique le numéro pour payer. Paiement en espèces possible, à convenir avec l'équipe sur WhatsApp."
+      : "Réglez directement sur place. L'équipe confirme votre commande sur WhatsApp.";
+  }
+  modeSel.addEventListener("change", syncMode); syncMode();
 
   /* ---------- Envoi WhatsApp ---------- */
   document.getElementById("sendWa").addEventListener("click", function () {
@@ -427,7 +434,10 @@
     lines.push("Total : " + fmt(cartTotal()) + " F");
     lines.push("");
     lines.push("Mode : " + mode);
-    if (mode === "Livraison") lines.push("Adresse : " + addr);
+    if (mode === "Livraison") {
+      lines.push("Adresse : " + addr);
+      lines.push("Paiement : Wave ou Orange Money (espèces à convenir)");
+    }
     lines.push("Nom : " + name);
     lines.push("Tél : " + phone);
     if (note) lines.push("Note : " + note);
