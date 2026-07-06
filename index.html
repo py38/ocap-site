@@ -99,83 +99,14 @@
 <section class="menu" id="menu">
   <div class="menu__head reveal">
     <p class="kicker">La carte</p>
-    <h2>Menu food</h2>
-    <p class="lead">Prix en francs CFA. Une carte qui voyage — des pâtes maison au poisson cru signé « Le&nbsp;Pêcheur ».</p>
+    <h2>Notre carte</h2>
+    <p class="lead">Prix en francs CFA. Composez votre commande&nbsp;: cliquez sur «&nbsp;Ajouter&nbsp;», puis envoyez votre panier sur WhatsApp.</p>
   </div>
 
-  <div class="menu__tabs reveal" id="menuTabs">
-    <button class="menu__tab is-active" data-cat="pates">Les Pâtes</button>
-    <button class="menu__tab" data-cat="salades">Salades</button>
-    <button class="menu__tab" data-cat="cru">Le Cru</button>
-    <button class="menu__tab" data-cat="sandwichs">Sandwichs</button>
-    <button class="menu__tab" data-cat="burgers">Burgers de papa</button>
-    <button class="menu__tab" data-cat="entrees">Entrées</button>
-  </div>
+  <div class="menu__tabs reveal" id="menuTabs"><!-- onglets générés en JS --></div>
+  <div class="menu__panels" id="menuPanels"><!-- plats générés en JS --></div>
 
-  <div class="menu__panels">
-
-    <div class="menu__panel is-active" data-cat="pates">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Pâte Fruits de Mer</h3><p>Mérou, gamba, supions, sauce tomate, bisque</p></div><span class="dish__p">13 500</span></li>
-        <li><div class="dish__l"><h3>Pâte Alfredo</h3><p>Blanc de poulet, crème fraîche, champignon, basilic, parmesan</p></div><span class="dish__p">11 500</span></li>
-        <li><div class="dish__l"><h3>Pâte Pesto Poulet</h3><p>Blanc de poulet, pesto, basilic frais</p></div><span class="dish__p">11 000</span></li>
-        <li><div class="dish__l"><h3>Pâte Bolognaise</h3><p>Viande hachée, sauce tomate maison, parmesan</p></div><span class="dish__p">8 500</span></li>
-        <li><div class="dish__l"><h3>Pâte Arrabbiata</h3><p>Sauce tomate maison au basilic pimentée</p></div><span class="dish__p">7 500</span></li>
-      </ul>
-    </div>
-
-    <div class="menu__panel" data-cat="salades">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Salade Ô Cap <em>by Le Pêcheur</em></h3><p>Thon confit, supion, olive, mesclun, tomate cerise</p></div><span class="dish__p">12 500</span></li>
-        <li><div class="dish__l"><h3>Salade Caesar</h3><p>Poulet frit, salade sucrine, croûton, parmigiano</p></div><span class="dish__p">12 000</span></li>
-        <li><div class="dish__l"><h3>Salade Niçoise</h3><p>Thon, œuf, sucrine, pomme de terre, haricot vert, olives noires</p></div><span class="dish__p">10 500</span></li>
-      </ul>
-    </div>
-
-    <div class="menu__panel" data-cat="cru">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Ceviche <em>by Le Pêcheur</em></h3><p>Poisson cru mariné aux agrumes et épices</p></div><span class="dish__p">12 000</span></li>
-        <li><div class="dish__l"><h3>Tataki de Thon</h3><p>Poêlée de légumes</p></div><span class="dish__p">10 000</span></li>
-        <li><div class="dish__l"><h3>Carpaccio Mixte</h3><p>Assortiment de poissons crus à l'huile d'olive</p></div><span class="dish__p">9 000</span></li>
-        <li><div class="dish__l"><h3>Carpaccio de Mérou</h3><p>Fines tranches de mérou cru à l'huile d'olive</p></div><span class="dish__p">8 000</span></li>
-        <li><div class="dish__l"><h3>Carpaccio de Thon</h3><p>Fines tranches de thon cru à l'huile d'olive</p></div><span class="dish__p">6 500</span></li>
-      </ul>
-    </div>
-
-    <div class="menu__panel" data-cat="sandwichs">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Lobster Sandwich <em>by Le Pêcheur</em></h3><p>Gambas, pain brioché, sauce du pêcheur, chips maison</p></div><span class="dish__p">10 000</span></li>
-        <li><div class="dish__l"><h3>Philly Steak</h3><p>Bœuf mariné, légumes sautés, mozzarella, sauce barbecue</p></div><span class="dish__p">10 000</span></li>
-        <li><div class="dish__l"><h3>Chicken Quesadillas</h3><p>Poulet mariné, légumes, emmental, fromage frais, guacamole, pico de gallo</p></div><span class="dish__p">9 500</span></li>
-        <li><div class="dish__l"><h3>Club Poulet</h3><p>Poulet, sucrine, sauce mayonnaise, câpre, cornichon</p></div><span class="dish__p">8 500</span></li>
-        <li><div class="dish__l"><h3>Croque Monsieur</h3><p>Jambon de dinde fumée, emmental, béchamel</p></div><span class="dish__p">8 000</span></li>
-        <li><div class="dish__l"><h3>Hot Dog</h3><p>Saucisse de bœuf, chips maison, moutarde, ketchup, cheddar</p></div><span class="dish__p">6 500</span></li>
-      </ul>
-    </div>
-
-    <div class="menu__panel" data-cat="burgers">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Fish Burger <em>by Le Pêcheur</em></h3><p>Crispy de mérou, roquette, tomate, cornichon, mayonnaise au curry</p></div><span class="dish__p">12 000</span></li>
-        <li><div class="dish__l"><h3>O'cap Burger</h3><p>Steak haché, salade, tomates, oignons, jalapeño, cheddar, sauce aux herbes</p></div><span class="dish__p">9 500</span></li>
-        <li><div class="dish__l"><h3>Crispy Chicken</h3><p>Crispy de poulet, légumes sautés, cheddar, sauce Ô Cap</p></div><span class="dish__p">8 500</span></li>
-        <li><div class="dish__l"><h3>Lebanese Burger</h3><p>Steak haché 150g, tomates, cornichon, frites, coleslaw, cheddar</p></div><span class="dish__p">8 000</span></li>
-        <li><div class="dish__l"><h3>Cheese Burger</h3><p>Steak haché 150g, oignon caramélisé, salade, cheddar, cornichon</p></div><span class="dish__p">7 500</span></li>
-      </ul>
-    </div>
-
-    <div class="menu__panel" data-cat="entrees">
-      <ul class="dish">
-        <li><div class="dish__l"><h3>Assiette de la Mer <em>by Le Pêcheur</em></h3><p>À partager, pour 2 personnes</p></div><span class="dish__p">12 000</span></li>
-        <li><div class="dish__l"><h3>Dynamite Shrimp <em>by Le Pêcheur</em></h3><p>Crevettes épicées, sauce crémeuse</p></div><span class="dish__p">9 500</span></li>
-        <li><div class="dish__l"><h3>Bâtonnet de Mérou au Parmesan</h3><p>Bâtonnets de mérou panés au parmesan</p></div><span class="dish__p">8 000</span></li>
-        <li><div class="dish__l"><h3>Chicken Strip</h3><p>Lamelles de poulet panées et frites</p></div><span class="dish__p">6 000</span></li>
-        <li><div class="dish__l"><h3>Mozza Stick</h3><p>Bâtonnets de mozzarella panés et frits</p></div><span class="dish__p">6 000</span></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <p class="menu__note reveal">La carte évolue au fil des arrivages. Menu drinks, brunch &amp; desserts à découvrir sur place.</p>
+  <p class="menu__note reveal">La carte évolue au fil des arrivages. Certains plats peuvent varier selon les produits du jour.</p>
 </section>
 
 <!-- ===== ÉQUIPE ===== -->
@@ -306,6 +237,50 @@
   <p class="footer__legal">© 2026 Ô Cap · Galerie Cap Sud, Abidjan · Ouvert tous les jours 8h–21h</p>
 </footer>
 
+<!-- ===== PANIER ===== -->
+<button class="cartfab" id="cartFab" aria-label="Voir le panier" hidden>
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.4 12.2a1.5 1.5 0 0 0 1.5 1.2h8.2a1.5 1.5 0 0 0 1.5-1.2L22 7H6"/></svg>
+  <span class="cartfab__count" id="cartCount">0</span>
+</button>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" data-close></div>
+  <aside class="drawer__panel" role="dialog" aria-label="Votre commande">
+    <header class="drawer__head">
+      <h3>Votre commande</h3>
+      <button class="drawer__close" data-close aria-label="Fermer">&times;</button>
+    </header>
+
+    <div class="drawer__body" id="drawerBody">
+      <ul class="cart" id="cartList"></ul>
+      <p class="cart__empty" id="cartEmpty">Votre panier est vide.<br><span>Ajoutez des plats depuis la carte.</span></p>
+
+      <div class="checkout" id="checkout">
+        <div class="checkout__total"><span>Total</span><strong id="cartTotal">0 F</strong></div>
+
+        <label class="field"><span>Nom</span><input type="text" id="fName" placeholder="Votre nom" autocomplete="name"></label>
+        <label class="field"><span>Téléphone</span><input type="tel" id="fPhone" placeholder="Ex : 07 00 00 00 00" autocomplete="tel"></label>
+        <label class="field"><span>Mode</span>
+          <select id="fMode">
+            <option value="Livraison">Livraison</option>
+            <option value="À emporter">À emporter</option>
+            <option value="Sur place">Sur place</option>
+          </select>
+        </label>
+        <label class="field" id="addrField"><span>Adresse de livraison</span><input type="text" id="fAddr" placeholder="Quartier, repère…"></label>
+        <label class="field"><span>Note <em>(optionnel)</em></span><input type="text" id="fNote" placeholder="Cuisson, allergies…"></label>
+
+        <p class="checkout__pay">Après l'envoi, l'équipe Ô Cap vous confirme la commande, le délai et les modalités de paiement.</p>
+        <button class="btn btn--wa btn--full" id="sendWa">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.5-1.2-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.4.5-.3.3c-.2.2-.3.4-.2.6.2.4.9 1.4 1.9 2.3 1.2 1.1 2.2 1.4 2.5 1.5.2.1.4.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.3.1.9-.1 1.5Z"/></svg>
+          Envoyer la commande sur WhatsApp
+        </button>
+      </div>
+    </div>
+  </aside>
+</div>
+
 <script src="js/main.js"></script>
+<script src="js/order.js"></script>
 </body>
 </html>

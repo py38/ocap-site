@@ -23,20 +23,6 @@
     if (e.target.tagName === "A") links.classList.remove("is-open");
   });
 
-  /* --- Onglets du menu --- */
-  var tabs = document.querySelectorAll(".menu__tab");
-  var panels = document.querySelectorAll(".menu__panel");
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      var cat = tab.getAttribute("data-cat");
-      tabs.forEach(function (t) { t.classList.remove("is-active"); });
-      tab.classList.add("is-active");
-      panels.forEach(function (p) {
-        p.classList.toggle("is-active", p.getAttribute("data-cat") === cat);
-      });
-    });
-  });
-
   /* --- Reveal au scroll --- */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window) {
